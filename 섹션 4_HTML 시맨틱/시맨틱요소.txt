@@ -1,0 +1,9 @@
+<main> div 태그와 같은 동작 그러나 본문을 나타낼 때 사용
+<nav> 페이지 내 혹은 외의 링크
+<section>
+<article>
+<aside> 사이드 바나 말풍선
+<header>
+<footer>
+<time>
+<figure> 독립적인 요소를 가르킴
