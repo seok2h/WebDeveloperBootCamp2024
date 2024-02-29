@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <!-- http://127.0.0.1:3000/tacos?username=dsfasdf&username= -->
+    <form action="/tacos">
+        <button type="button">PLEASEEEEE DO NOT SUBMIT THE FORM</button>
+        <p>
+            <label for="username">Enter a Username: </label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+
+        <p>
+            <label for="password">Enter a Password: </label>
+            <input id="password" type="password"" placeholder=" password" name="password">
+        </p>
+        <button>PLEASE DO NOT SUBMIT THE FORM</button>
+
+        <p>
+            <label for="color">Enter a Color:</label>
+            <input type="color" id="color">
+        </p>
+
+        <p>
+            <label for="number">Enter a Number:</label>
+            <input type="number" placeholder="enter a number" id="number">
+        </p>
+
+        <p>
+            <input type="time">
+            <input type="date">
+        </p>
+
+        <button>Submit!!!</button>
+        <input type="submit" value="Click Me">
+    </form>
+    <hr>
+    <!-- outside of a form, no default behavior -->
+    <button>just button</button>
+
+    <p></p>
+</body>
+
+</html>
+

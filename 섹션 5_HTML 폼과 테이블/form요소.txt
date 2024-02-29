@@ -1,0 +1,11 @@
+<input> 입력 (닫는 태그가 존재하지 않음)
+    - type="text" ("password", "color", "date", ...)
+    - placeholder 입력 창에 나타날 문자열
+
+<label> 폼 요소들을 구분할 수 있도록 하는 라벨
+    - for="id" 로 연결할 수 있음
+
+<button> 말 그대로 버튼. 버튼이 폼 안에 존재하면 따로 수행을 지정해주지 않는 이상 폼을 제출해버린다
+    - type="button" 말그대로 버튼이 됨. 폼 제출 X
+    - type="submit" 버튼 타입의 기본값
+    

@@ -1,0 +1,6 @@
+<td> 단일 셀을 의미
+<tr> 행(row)를 정해줄 때 사용
+<th> 표의 header를 정의해 줌
+<thead> 헤더 영역을 표시해줌 (html의 <head>와 <body> 부분으로 나누는 개념과 같음)
+rowspan="2" 행을 두 칸 차지함
+colspan="2" 열을 두 칸 차지함
