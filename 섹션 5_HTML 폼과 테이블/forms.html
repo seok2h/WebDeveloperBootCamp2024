@@ -30,7 +30,7 @@
 
         <p>
             <label for="number">Enter a Number:</label>
-            <input type="number" placeholder="enter a number" id="number" name="num">
+            <input type="number" placeholder="enter a number" id="number" name="num" min="1" step="2" max="1000">
         </p>
 
         <p>
@@ -61,6 +61,38 @@
         <!-- <button>Search Youtube</button> -->
     </form>
 
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs" value="XS">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="S">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="M">
+        </p>
+        <p>
+            <label for="">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak" selected>Steak</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" min="1" max="100" value="75" step="7" name="cheese_level">
+        </p>
+
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <textarea name="Requests?" id="requests" cols="30" rows="10" placeholder="Type something here"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <input> 입력 (닫는 태그가 존재하지 않음)
     - type="text" ("password", "color", "date", ...)
+        - 라디오 버튼 같은 경우는 value=""를 지정해줘야지 내가 정한 값이 전송됨
     - placeholder 입력 창에 나타날 문자열
     - name="" 데이터 전송할 때 사용
 
@@ -10,3 +11,6 @@
     - type="button" 말그대로 버튼이 됨. 폼 제출 X
     - type="submit" 버튼 타입의 기본값
     
+<select>
+    - <option>
+        - selected
