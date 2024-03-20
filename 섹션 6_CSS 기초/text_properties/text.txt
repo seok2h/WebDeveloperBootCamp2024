@@ -30,3 +30,7 @@ font-family:
 
 
 font_stack
+
+
+속성 선택자에서 *=는 어떤 요소가 포함된 결과를 요구한다
+ 예) href*="example" href에 example이 포함되어 있는지 확인
