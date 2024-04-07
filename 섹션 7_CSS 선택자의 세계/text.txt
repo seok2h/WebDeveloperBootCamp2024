@@ -1,0 +1,23 @@
+# id 선택자 예) #signup signup이라는 id를 가진 태그
+. 클래스 선택자 예) .signup
+tag.class 태그 내의 클래스 검색 예) section.post
+tag tag  자손 선택자 예) footer a footer 안에 a 태그
+tag + tag 인접 선택자 예) h2 + button h2 태그와 인접한 button 태그
+tag > tag 직계 자손 선택자 예) footer > a footer 태그 안에 a태그
+tag[]
+    - tag[type="password"] type이 "password"인 태그
+    - tag[class="post"] class가 post인 태그
+    - tag[*=] 다음에 따르는 내용이 포함된 태그
+        예) a[href*="google"] href에 "google"이 포함된 a 태그
+    - tag[$=] 다음에 따르는 내용으로 끝나는 태그
+    - tag[~=] 다음에 따르는 내용의 단어가 포함되는 태그
+tag:hover 커서가 올라가 있을 때 반응 예) button:hover
+tag:active 커서가 눌렀을 때 반응 예) button:active
+tag:checked 체크 되었을 때 반응
+tag:nth-of-type(2n) 2n마다 속성 추가 (괄호안의 인자는 바뀔 수 있음)
+tag::first-letter
+tag::first-line
+tag::selection 드래그 했을 때 효과
+주어진 선택자가 얼마나 더 구체적인지 계산하고 더 구체적으로 설명된 선택자에게 우선순위를 부여함
+id > class > element
+!important 가장 최우선으로 속성 지정

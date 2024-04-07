@@ -2,14 +2,19 @@ body {
     color: purple;
 }
 
+/* h1 {
+    color: blue;
+} */
+
 section {
     color: aqua;
 }
 
-form {
+/* form {
     color: greenyellow;
-}
+} */
 
+/* 일부 요소는 상속을 받지 않을 수 있으므로 아래와 같이 inherit를 적어주어야지 상속을 받을 수 있다. */
 button, input {
     color: inherit;
 }

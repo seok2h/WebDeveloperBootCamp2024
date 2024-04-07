@@ -11,7 +11,8 @@ button {
     background-color: #a8dadc;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #1d3557;
 }
 
@@ -40,15 +41,15 @@ footer a {
     color: #e63946;
 }
 
-input + button {
+input+button {
     background-color: pink;
 }
 
-h2 + button {
+h2+button {
     font-size: 20px;
 }
 
-footer > a {
+footer>a {
     color: #a8dadc;
 }
 
@@ -77,11 +78,6 @@ a[href*="google"] {
     color: #f1faee
 } */
 
-.post button:hover {
-    background-color: #e63946;
-    color: #f1faee
-}
-
 a:hover {
     text-decoration: underline;
 }
@@ -105,3 +101,21 @@ p::first-line {
 p::selection {
     background-color: #fcbf49;
 }
+
+/* h1, h2 {
+    color:yellow;
+} */
+
+button:hover {
+    background-color: olive;
+    /* font-size: 10px; */
+}
+
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee
+}
+
+/* button {
+    background-color: magenta !important;
+} */
