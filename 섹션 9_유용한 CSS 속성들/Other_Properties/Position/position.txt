@@ -1,0 +1,15 @@
+
+position:
+    static default 설정
+    relative => 원래자리에서 옮길 수 있음
+        top: 100px => 위 부분을 100px 만큼 비움 (요소가 내려감)
+        bottom:
+        left:
+        right:
+        예)
+        // h1 {
+        //      position: relative
+        //      top: 100px
+        // }
+    absolute => 문서의 일반적인 흐름에서 요소가 제거되고 공간도 배정되지 않음
+        top, bottom, right, left를 지정하면 가장 가까운 조상을 기준으로 상대적으로 배치, 조상이 없다면 body를 기준으로 배치

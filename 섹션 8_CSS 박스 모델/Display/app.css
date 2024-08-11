@@ -1,0 +1,46 @@
+/* h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;
+    display: inline;
+} */
+
+/* h1은 block level */
+/* display
+inline
+block
+*/
+
+/* span {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    display: block
+} */
+
+span {
+    background: palevioletred;
+    border: 1px solid black;
+    width: 500px;
+    padding: 50px;
+    margin: 50px; 
+}
+/* 인라인 디스플레이라면 너비나 높이는 무시된다.
+    패딩은 적용되기는 한다.
+    마진은 가로줄 하나에만 영향을 준다. */
+
+h1 {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    width: 300px;
+    padding: 50px;
+    margin: 100px;
+    /* display: none */
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: olivedrab;
+    border: 5px solid black;
+    display: inline-block;
+    
+}
