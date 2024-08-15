@@ -1,0 +1,19 @@
+section {
+	width: 500px;
+	height: 500px;
+	background-color: magenta;
+}
+
+#rgba {
+	width: 50%;
+	height: 50%;
+	background-color: rgba(255, 255, 255, 0.7)
+/* 	16진법으로도 나타낼 수 있다. 예) aabbccff (00: 완전투명, ff: 불투명) */
+}
+
+#opacity {
+	width: 50%;
+	height: 50%;
+	background-color: yellow;
+	opacity: 0.3
+}
