@@ -1,0 +1,75 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-wrap: wrap-reverse; */
+    /* align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: space-between; */
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+/* div:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+div:nth-of-type(2) {
+    align-self: center;
+} */
+
+div:nth-of-type(5) {
+    align-self: flex-start;
+}
+
+/* 
+flex-direction: 메인 축을 결정한다
+기본값은 아마 row
+row
+row-reverse
+column
+column-reverse
+
+justify-content: 요소의 위치를 결정
+flex-start
+center
+flext-end
+space-between: 요소 사이의 공간을 넣지만 요소 바깥의 간격은 ㄴㄴ
+space-around: 요소 사이 바깥 다 넣음
+space-evenly: 요소 사이의 공간을 균등하게 넣음
+
+align-items: 요소의 위치를 결정하는데 교차축을 따라 결정 (flex-direction이 row이면 column을 기준으로 flex-direction이 column이면 row를 기준으로 ㅇㅋ?)
+flex-start
+center
+flex-end
+baseline 텍스트의 기준선
+
+align-content
+space-between
+space-around
+space-evenly
+
+flex-wrap: 요소들이 강제로 한줄에 배치되게 할 것인지, 또는 가능한 영역 내에서 벗어나지 않고 여러행으로 나누어 표현 할 것인지 결정하는 속성
+nowrap
+wrap
+wrap-reverse
+*/

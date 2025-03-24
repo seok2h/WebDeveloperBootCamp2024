@@ -1,0 +1,21 @@
+/* 구글 글꼴은 무료이 어떤 웹페이지든 선택할 수 있는 992개의 다양한 글꼴을 제공한단다
+궁금하면 fonts.google.com에 접속*/
+
+body {
+    font-family: 'Libre Baskerville';
+}
+
+main {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+h1+h2 {
+    margin-top: 10px;
+}

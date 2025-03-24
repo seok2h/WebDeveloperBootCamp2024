@@ -1,0 +1,52 @@
+section {
+    width: 80%;
+    height: 800px;
+    /* 
+    background-image: url("https://img.khan.co.kr/news/2024/03/23/news-p.v1.20240323.c159a4cab6f64473adf462d873e01e43_P1.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right; */
+
+    /* 위에것을 한꺼번에 써줄 수 있음 순서는 상관 x 
+    단 background-size를 써줄 때에는 <position>뒤에 /와 함께 넣어야 한다. 예) center/cover
+    또한 쉼표를 이용한 구분으로 다중 배경을 삽입할 수 있다. 이미지, 색깔 등
+    */
+    background: center/40% no-repeat url("https://img.khan.co.kr/news/2024/03/23/news-p.v1.20240323.c159a4cab6f64473adf462d873e01e43_P1.webp"), blueviolet;
+
+    margin: 0 auto;
+}
+
+/*  
+background-size 옵션
+====================
+contain: 비율을 유지하여 이미지 잘림 없이 최대한 꽉차게 표시
+cover: 비율을 유지하며 꽉차게 나타나지만 잘림이 있음
+auto
+
+*/
+
+/* 
+background-repeat 옵션
+======================
+repeat-x;
+repeat;
+space;
+round;
+no-repeat;
+space repeat;
+*/
+
+/* 
+background-position 옵션 : 기준을 잡아줌
+top
+bottom
+left
+right
+center
+
+
+*/
+h1 {
+    font-size: 100px;
+    color:white;
+}
