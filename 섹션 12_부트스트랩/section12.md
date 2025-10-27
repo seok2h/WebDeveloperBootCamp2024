@@ -129,7 +129,7 @@ label 태그에는 **form-check-label**
             </div>
 ```
 위 코드 결과  
-![image11](./img/image11)<br>
+![image11](./img/image11.png)<br>
 ~~2. form-row를 주는 방법~~&nbsp;&nbsp;작동 안함.  
 ~~1번과의 차이는 폼 사이의 공간이 줄어듦~~
 ```html
