@@ -92,4 +92,4 @@ justify-content-lg-start, justify-content-xl-between 등으로 변경점을 줄 
 ![image8](./img/image8.png)
 
 **폼컨트롤을 적용했을 때**
-![image9](./img/image.png)
+![image9](./img/image9.png)
