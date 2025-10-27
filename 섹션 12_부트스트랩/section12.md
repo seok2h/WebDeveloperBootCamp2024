@@ -56,3 +56,40 @@
 * **class="row justify-content-between"를 주었을 때 예)**  
 ![image7](./img/image7.png)  
 콘텐츠가 양 끝으로 정렬
+
+justify-content-lg-start, justify-content-xl-between 등으로 변경점을 줄 수 있다.
+
+# 132. 부스트랩과 폼(Forms)
+참고: https://getbootstrap.com/docs/5.3/forms/overview/
+
+### 기본적인 폼 형식
+- form-group
+```html
+<div class=form-group></div>
+```
+### 폼컨트롤
+- form-control
+```html
+<form action="#nowhere">
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="email">
+    </div>
+    <div class="form-group">
+        <label for="password">password</label>
+        <input type="password" class="form-control" id="password" placeholder="password">
+    </div>
+    <div class="form-group">
+        <label for="state">State</label>
+        <select class="form-control" name="state" id="state">
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+        </select>
+    </div>
+</form>
+```
+**폼컨트롤을 적용하지 않았을 때**  
+![image8](./image8)
+
+**폼컨트롤을 적용했을 때**
+![image9](./image9)
