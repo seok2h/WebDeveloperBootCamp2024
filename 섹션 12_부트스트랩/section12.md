@@ -91,5 +91,52 @@ justify-content-lg-start, justify-content-xl-between 등으로 변경점을 줄 
 **폼컨트롤을 적용하지 않았을 때**  
 ![image8](./img/image8.png)
 
-**폼컨트롤을 적용했을 때**
+**폼컨트롤을 적용했을 때**  
 ![image9](./img/image9.png)
+
+**form-control-lg**, **form-control-sm** 등으로 크기를 조정할 수 있다. 
+
+* **form-check**<br>
+[bootstrap-check&radios](https://getbootstrap.com/docs/5.3/forms/checks-radios/#default-stacked)<br>
+해당 체크박스의 아이콘은 더 둥근 모서리를 가졌으며 클릭했을 때 반짝이는 효과가 있다. 
+```html
+<div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                    Sign Me Up
+                </label>
+            </div>
+```
+input 태그에는 **form-check-input**
+label 태그에는 **form-check-label**
+
+위 코드 결과  
+![image10](./img/image10.png)
+
+* **폼에 레이아웃 주는 법**<br>
+1. 그냥 row를 주는 방법
+```html
+ <form action="#nowhere">
+            <div class="row">
+                <div class="form-group col">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="email">
+                </div>
+                <div class="form-group col">
+                    <label for="password">password</label>
+                    <input type="password" class="form-control" id="password" placeholder="password">
+                </div>
+            </div>
+```
+위 코드 결과  
+![image11](./img/image11)<br>
+~~2. form-row를 주는 방법~~&nbsp;&nbsp;작동 안함.
+~~1번과의 차이는 폼 사이의 공간이 줄어듦~~
+```html
+<form action="#nowhere">
+            <div class="form-row"> <!--form-row 작동 안함.-->
+                <div class="form-group col">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="email">
+                </div>
+```
