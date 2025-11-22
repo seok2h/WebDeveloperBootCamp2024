@@ -24,4 +24,20 @@
 
 ### 변수
 #### 변수 선언 법 : let someName = value;
-예) let year = 1985;
+예) let year = 1985;<br>
+
+**증감 연산자 사용 가능<br>**
+++year<br>
+year++<br>
+가능
+
+**상수 선언 법**<br>
+const pi = 3.14159265;
+const daysInWeek = 7;
+
+**The Old Variable Keyword**<br>
+var runDistance = 26.2
+
+**BOOLEANS**<br>
+let isLoggedIn = true;<br>
+let flagVariable = false;
