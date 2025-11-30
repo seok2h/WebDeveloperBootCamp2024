@@ -94,4 +94,15 @@ meesage.indexOf('is')
 >>> 11
 message.indexOf('z')
 >>> -1 // Not found
+
+let str = 'supercalifragilisticexpialidocious'
+str.slice(0,5); // 'super'
+str.slice(5); // 'califragilisticexpialidocious'
+
+let anooyingLaugh = 'teehee so funny! teehee!';
+annoyingLaugh.replace('teehee', 'haha');
+>>> 'haha so funny! teehee!' // it only replaces the first instance
+
+'lol'.repeat(3)
+>>> 'lollollol'
 ```
