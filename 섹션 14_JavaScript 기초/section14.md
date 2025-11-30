@@ -106,3 +106,28 @@ annoyingLaugh.replace('teehee', 'haha');
 'lol'.repeat(3)
 >>> 'lollollol'
 ```
+
+### Template Literals
+리눅스 쉘과 비슷함.<br>
+<b>단 작은 따옴표(')가 아닌 백틱(`)을 사용</b>
+```JavaScript
+`I counted ${3 + 4} sheep`; //
+>>> 'I counted 7 sheep'
+```
+```JavaScript
+let product = 'Artichoke';
+let price = 2.25;
+let qty = 5;
+"You bought " + qty + " " + product + ". Total is: " + price * qty
+>>> "you bought 5 Artichoke. Total is: 11.25" // 가능하지만 복잡함
+
+// Template Literals 사용 예
+`You bought ${qty} ${product}. Total is: ${price * qty}`
+>>> "you bought 5 Artichoke. Total is: 11.25"
+```
+
+### Null과 undefined
+Null은 python에 None과 비슷함.<br>
+Undefined은 정의되지 않음.<br>
+null은 null 자체로 값임.<br>
+undefined는 값자체가 존재하지 않음.
