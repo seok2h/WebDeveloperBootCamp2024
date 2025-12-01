@@ -34,6 +34,25 @@ alert("HELLO THERE!");
 **prompt() : 브라우저에서의 입력창 생성**
 예)
 ```JavaScript
-promt("please enter a number");
+let userInput = promt("please enter a number"); // 사용자가 무엇을 입력하든 무조건 문자열로 입력받음
 ```
 ![image2](./img/image2.png)<br>
+
+### parseInt()
+string을 정수로 변경해주는 메소드
+```JavaScript
+parseInt("101");
+>>> 101
+```
+
+### JavaScript 파일
+자바스크립트 파일은 확장자가 .js이다. 자바스크립트를 html과 연결해주기 위해서는 script 태그가 필요하다.<br>
+주로 script 태그는 body 태그의 끝에 작성한다.
+```html
+<body>
+    .
+    .
+    .
+    <script src="주소"></script>
+</body>
+```
