@@ -26,6 +26,9 @@ else if (dayOfWeek === 'Saturday') {
 else if (dayOfWeek === 'Friday') {
     console.log("FRIDAYS ARE DECENT, ESPECIALLY AFTER WORK!");
 }
+else {
+    console.log("MEH");
+}
 
 // 0-5 - Free
 // 5 - 10 Child $10
@@ -43,4 +46,6 @@ else if (age < 10) {
 else if (age < 65) {
     console.log("You are an adult");
 }
-
+else {
+    console.log("You are a senior");
+}

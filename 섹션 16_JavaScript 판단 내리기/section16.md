@@ -70,4 +70,7 @@ else if (rating === 2) {
 else if (rating === 1) {
     console.log("NEEDS IMPROVEMENT");
 }
+else {
+    console.log("INVALID RATING!");
+}
 ```
