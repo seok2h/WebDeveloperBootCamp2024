@@ -56,3 +56,11 @@ parseInt("101");
     <script src="주소"></script>
 </body>
 ```
+
+### if 문
+if 사용 예시
+```JavaScript
+let rating = 3;
+if (rating === 3) {
+    console.log("YOU ARE A SUPERSTAR!!");
+}
