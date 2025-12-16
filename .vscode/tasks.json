@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Count today's LOC",
+            "type": "shell",
+            "command": "git log --since=midnight --numstat | awk '{ add += $1; del += $2 } END { print \"오늘 추가:\", add, \"줄 / 삭제:\", del, \"줄\" }'",
+            "options": {
+                "shell": {
+                    "executable": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+                    "args": [
+                        "-lc"
+                    ]
+                }
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
