@@ -74,3 +74,17 @@ else {
     console.log("INVALID RATING!");
 }
 ```
+
+### Truthy and Falsy
+모든 언어가 비슷하듯 다음을 제외하면 다 Truthy이다. (조건문에 들어가면 거짓으로 작동)
+* false
+* 0
+* "" (empty string)
+* null
+* undefined
+* NaN
+
+### Logical Operator
+* && (and)
+* || (or)
+* ! (not)
