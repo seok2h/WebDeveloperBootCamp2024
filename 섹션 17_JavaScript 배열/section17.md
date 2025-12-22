@@ -48,4 +48,18 @@ person
 >>> "herimone"
 movieLine
 >>> ['tom', 'nancy', 'pablo', 'harry']
+
+// .shift()
+let person = movieLine.shift();
+
+person
+>>> "tom"
+movieLine
+>>> ['nancy', 'pablo', 'harry']
+
+// .unshift()
+movieLine.unshift('VIP');
+
+movieLine
+>>> ['VIP', 'nancy', 'pablo', 'harry']
 ```
