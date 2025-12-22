@@ -62,4 +62,37 @@ movieLine.unshift('VIP');
 
 movieLine
 >>> ['VIP', 'nancy', 'pablo', 'harry']
+
+// .concat()
+let cats = ['blue', 'kitty']
+
+let dogs = ['rusty', 'wyatt']
+
+cats.concat(dogs)
+>>> ['blue', 'kitty', 'rusty', 'wyatt']
+
+cats
+>>> ['blue', 'kitty']
+
+let comboParty = dogs.concat(cats);
+
+comboParty
+>>> ['rusty', 'wyatt', 'blue', 'kitty']
+
+// includes()
+cats.includes('blue')
+>>> true
+
+cats.includes('Blue')
+>>> false
+
+// .reverse()
+comboParty.reverse()
+>>> ['kitty', 'blue', 'wyatt', 'rusty']
+
+comboParty
+>>> ['kitty', 'blue', 'wyatt', 'rsuty'] // 원본을 변경함
+
+
 ```
+
