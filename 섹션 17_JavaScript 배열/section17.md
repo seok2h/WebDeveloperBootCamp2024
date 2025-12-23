@@ -41,6 +41,7 @@ movieLine.push('harry', 'hermione');
 movieLine
 >>> ['tom', 'nancy', 'pablo', 'harry', 'herimone']
 
+
 // .pop()
 let person = movieLine.pop();
 
@@ -48,6 +49,7 @@ person
 >>> "herimone"
 movieLine
 >>> ['tom', 'nancy', 'pablo', 'harry']
+
 
 // .shift()
 let person = movieLine.shift();
@@ -57,11 +59,13 @@ person
 movieLine
 >>> ['nancy', 'pablo', 'harry']
 
+
 // .unshift()
 movieLine.unshift('VIP');
 
 movieLine
 >>> ['VIP', 'nancy', 'pablo', 'harry']
+
 
 // .concat()
 let cats = ['blue', 'kitty']
@@ -79,12 +83,14 @@ let comboParty = dogs.concat(cats);
 comboParty
 >>> ['rusty', 'wyatt', 'blue', 'kitty']
 
+
 // includes()
 cats.includes('blue')
 >>> true
 
 cats.includes('Blue')
 >>> false
+
 
 // .reverse()
 comboParty.reverse()
@@ -94,5 +100,49 @@ comboParty
 >>> ['kitty', 'blue', 'wyatt', 'rsuty'] // 원본을 변경함
 
 
+// .slice()
+let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+
+colors.slice(3)
+>>> ['green', 'blue', 'indigo', 'violet']
+
+colors.slice(1)
+>>> ['orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+
+colors.slice(2, 4)
+>>> ['yellow', 'green'] // 시작점은 포함하지만 끝점은 포함하지 않음
+
+colors.slice(-2)
+>>> ['indigo', 'violet']
+
+
+// .splice()
+colors.splice(5, 1) // .splice(index, deletecount) 
+>>> ['indigo']
+
+colors
+>>> ['red', 'orange', 'yellow', 'green', 'blue', 'violet']
+
+colors.splice(1, 0, 'red-orange')
+
+colors
+>>> ['red', 'red-orange', 'orange', 'yellow', 'green', 'blue', 'violet']
+
+
+colors.splice(3, 0, 'yellow-green', 'forestgreen')
+
+colors
+>>> (9) ['red', 'red-orange', 'orange', 'yellow-green', 'forestgreen', 'yellow', 'green', 'blue', 'violet']
+
+colors.splice(2, 2, 'DELETED!!')
+
+colors
+>>> ['red', 'red-orange', 'DELETED!!', 'forestgreen', 'yellow', 'green', 'blue', 'violet']
+
+
+// .sort()
+scores = [1, 70, 100, 2500, 9, -12, 0, 34]
+scores.sort()
+>>> (8) [-12, 0, 1, 100, 2500, 34, 70, 9] // 문자열로 변환하여 정렬함
 ```
 
