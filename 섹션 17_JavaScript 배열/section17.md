@@ -150,4 +150,16 @@ scores.sort()
 arr1 = [1,2,3]<br>
 arr2 = [1,2,3]
 
-arr1 === arr2가 성립하지 않음
+arr1 === arr2가 성립하지 않음<br><br>
+
+**배열을 const로 선언해도 내부 컨텐츠는 변경 가능**
+```JavaScript
+const nums = [1,2,3];
+nums.push(4)
+
+nums
+>>> (4) [1,2,3,4]
+
+// however
+nums = [1,2,3,4] // 에러. 불가능
+```
