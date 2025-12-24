@@ -163,3 +163,8 @@ nums
 // however
 nums = [1,2,3,4] // 에러. 불가능
 ```
+
+**중첩배열**
+```JavaScript
+const gameboard = [['X','O','X'], ['O', null, 'X'], ['O', 'O', 'X']]
+```
