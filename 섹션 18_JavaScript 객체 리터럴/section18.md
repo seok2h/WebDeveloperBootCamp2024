@@ -26,4 +26,17 @@ comment.username
 
 comment['user' + 'name']
 >>> "sillyGoose420"
+
+const midterms = {danielle: 96, thomas: 78};
+midterms.thomas = 79;
+
+midterms
+>>>  {danielle: 96, thomas: 79}
+
+midterms.ezra = 'A';
+midterms['antonio'] = 'B';
+
+midterms
+>>> {danielle: 96, thomas: 79, ezra: 'A', antonio: 'B'}
+
 ```
