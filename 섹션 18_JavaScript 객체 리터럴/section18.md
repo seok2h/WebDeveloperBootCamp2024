@@ -40,3 +40,28 @@ midterms
 >>> {danielle: 96, thomas: 79, ezra: 'A', antonio: 'B'}
 
 ```
+
+### Arrays + Objects
+```JavaScript
+const shoppingCart = [
+    {
+        product: 'Jenga Classic',
+        price: 6.88,
+        quantity: 1,
+    },
+    {
+        product: 'Echo Dot',
+        price: 29.99,
+        quantity: 3
+    },
+    {
+        product: 'Fire Stick',
+        price: 39.99,
+        quantity: 2
+    }
+]
+
+const comment = [
+    {username: 'Tammy', text: 'lolololol', votes: 9},
+    {username: 'FishBoi', text: 'glub glub', votes: 12345},
+]
