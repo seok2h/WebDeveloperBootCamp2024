@@ -85,3 +85,53 @@ for (let char of "hello world") {
     'l'
     'd'
 ```
+
+### For in 문
+```JavaScript
+const testScores = {
+    keenan: 80,
+    damon: 67,
+    kim: 89,
+    shawn: 91,
+    marlon: 72,
+    dwayne: 77,
+    nadia: 83,
+    elvira: 97,
+    diedre: 81,
+    vonnie: 60
+}
+
+for (let person of testScores) { // Uncaught TypeError: testScores is not iterable
+    console.log(person);
+}
+
+
+// But
+for (let person in testScores) { 
+    console.log(person);
+}
+>>> keenan
+    damon
+    kim
+    shawn
+    marlon
+    dwayne
+    nadia
+    elvira
+    diedre
+    vonnie
+
+for (let person in testScores) {
+    console.log(`${person} scored ${testScores[person]}`)
+}
+>>> keenan scored 80
+    damon scored 67
+    kim scored 89
+    shawn scored 91
+    marlon scored 72
+    dwayne scored 77
+    nadia scored 83
+    elvira scored 97
+    diedre scored 81
+    vonnie scored 60
+```
