@@ -40,3 +40,12 @@ for (let i = 0; i < seatingChart[i]; i++) {
     'Sakura'
     'Jack'
     'Erika'
+```
+
+### While 문
+```JavaScript
+let count = 0;
+while (count < 10) {
+    console.log(count);
+    count++;
+}
