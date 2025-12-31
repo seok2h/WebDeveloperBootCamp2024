@@ -49,3 +49,39 @@ while (count < 10) {
     console.log(count);
     count++;
 }
+```
+
+### For ... of 문
+for (variable of iterable) {
+    statement
+}
+
+``` JavaScript
+const subreddits = ['cringe', 'books', 'chickens', 'funny', 'pics', 'soccer'];
+
+for (let sub of subreddits) {
+    console.log(sub)
+}
+>>> cringe
+    books
+    chickens
+    funny
+    pics
+    soccer
+
+
+for (let char of "hello world") {
+    console.log(char)
+}
+>>> 'h'
+    'e'
+    'l'
+    'l'
+    'o'
+
+    'w'
+    'o'
+    'r'
+    'l'
+    'd'
+```
