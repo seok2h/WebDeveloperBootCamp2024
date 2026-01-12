@@ -27,3 +27,29 @@ for (var i = 0; i < 5; i++) {
 
 console.log(i) // 5
 console.log(msg) // "asdf"
+```
+
+### 렉시컬 범위
+부모 함수의 안에 중첩된 내부 함수는 해당 외부 함수의 범위에나 또는 범위 내에서 정의된 변수에 엑세스할 수 있다.
+```JavaScript
+function backRobbery() {
+    const heroes = ['Spiderman', 'Wolverine', 'Black Panther', 'Batwoman'];
+    function cryForHelp() {
+        for (let hero of heroes) { // 부모 함수의 변수를 사용할 수 있다.
+            console.log(`PLEASE HELP US, ${hero.toUpperCase()}`)
+        }
+    }
+    cryForHelp();
+}
+```
+하지만 자식 함수에서 선언된 변수는 부모 함수에서 접근할 수 없다.
+
+### 함수를 정의하는 다른 방법
+```JavaScript
+const add = function (x, y) {
+    return x + y;
+}
+
+add(3, 4) // 7
+}
+```

@@ -13,3 +13,13 @@ if (radius > 0) {
 
 console.log(radius);
 console.log(PI)
+
+function backRobbery() {
+    const heroes = ['Spiderman', 'Wolverine', 'Black Panther', 'Batwoman'];
+    function cryForHelp() {
+        for (let hero of heroes) {
+            console.log(`PLEASE HELP US, ${hero.toUpperCase()}`)
+        }
+    }
+    cryForHelp();
+}
