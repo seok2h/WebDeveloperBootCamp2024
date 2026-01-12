@@ -1,4 +1,4 @@
-# 햠수
+# 함수
 ### 함수 정의 법
 ```JavaScript
 function funcName() {
