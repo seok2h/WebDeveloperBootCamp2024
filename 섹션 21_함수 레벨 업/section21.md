@@ -110,3 +110,36 @@ const isAdult = makeBetweenFunc(19, 64);
 isAdult(30)
 >>> true
 ```
+
+### 객체 안에 함수
+```JavaScript
+const myMath = {
+    PI: 3.14159,
+    square: function (num) {
+        return num * num;
+    },
+    cube: function (num) {
+        return num ** 3;
+    }
+}
+
+myMath.PI
+>>> 3.14159
+myMath.square(2)
+>>> 4
+myMath["squre"](2) // 가능은 하지만 잘 쓰지 않는다.
+>>> 4
+```
+단축키 혹은 속기법(짧게 쓰는법)이 존재한다
+```JavaScript
+const math = {
+    blah: 'Hi!',
+    add(x, y) {
+        return x + y;
+    },
+    multiply(x, y) {
+        return x * y;
+    }
+} // function 키워드가 필요하지 않다.
+math.add(50, 60);
+```
