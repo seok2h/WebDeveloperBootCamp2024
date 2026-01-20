@@ -143,3 +143,59 @@ const math = {
 } // function 키워드가 필요하지 않다.
 math.add(50, 60);
 ```
+### this 키워드
+```JavaScript
+const cat = {
+    name: 'Blue Steele',
+    color: 'grey',
+    breed: 'scottish fold',
+    meow() {
+        console.log(`${this.name} says MEOWWWW`); // 여기서 this는 cat 객체를 가르킨다.
+    }
+}
+
+cat.meow()
+>>> "Blue Steele says MEOWWWW"
+
+
+// 단 this는 가르키는 대상이 변할 수 있다.
+const meow2 = cat.meow;
+meow2()
+>>> "says MEOWWW" // 여기서 this가 가르키는 객체는 window가 된다.
+
+// window 객체는 javascript의 최상위 객체. 즉 어떤 객체를 정의하더라도 window 객체 내에서 정의가 됨 ↓
+function scream() {
+    console.log("AHHHHHHHHHHHAH");
+}
+
+window.scream()
+>>> "AHHHHHHHHHHHAH"
+
+// this는 항상 .왼쪽에 있는 객체를 가르키게 되어있음.
+// meow2()는 왼쪽에 아무것도 존재하지 않으므로
+// this는 항상 window를 가르키게 됨
+```
+ ### Try / Catch 문
+ 파이썬의 try / except문과 같은 역할을 한다.
+
+```JavaScript
+
+try {
+    hello.toUpperCase(); // 여기서 에러 발생
+} catch {
+    console.log("ERROR");
+}
+
+>>> "ERROR"
+
+function yell(msg) {
+    try {
+    console.log(msg.toUpperCase().repeat(3));
+    }
+    catch (e) {
+        console.log(e)
+        console.log("please pass a string next time!");
+    }
+}
+
+```
