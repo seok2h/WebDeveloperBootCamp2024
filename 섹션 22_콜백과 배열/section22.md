@@ -53,3 +53,14 @@ const titles = movies.map(function (movie) {
 
 >>> ["Amadues", "Stand By Me", "Parasite", "Alien"]
 ```
+
+### Arrow function
+```JavaScript
+const square = (x) => {
+    return x * x;
+}
+
+const sum = (x, y) => {
+    return x + y;
+}
+```
