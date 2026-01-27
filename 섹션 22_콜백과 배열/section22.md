@@ -77,3 +77,42 @@ const sum = (x, y) => (
     a + b;
 ) // ERROR
 ```
+
+### setTimeout
+다른 언어의 sleep 함수와 비슷하지만 다르다.
+```JavaScript
+console.log("HELLO!!!...");
+setTimeout(() => {
+    console.log("...are you still there?")
+}, 3000)
+
+console.log("GOODBYE!!!"); // 이건 바로 출력 됨
+
+>>> HELLO!!!...
+>>> GOODBYE!!!
+>>> ...are you still there?
+```
+밑의 명령어는 정상 작동하지 않는다.
+```JavaScript
+setTimeout(console.log("hi!"), 3000)
+```
+setTimeout의 인수로 콜백 함수가 와야한다.
+
+### setInterval
+원하는 시간을 간격으로 무한 반복하게 한다.
+```JavaScript
+setInterval(() => {
+    console.log(Math.random())
+}, 2000 )
+```
+Math.random()이 2초를 간격으로 무한 출력
+
+**interval을 멈추는 법: clearInterval**
+setInterval을 호출할 때마다 id를 반환한다. 이 id를 이용하여 중단시킬 수 있음.
+```JavaScript
+const id = setInterval(() => {
+    console.log(Math.random())
+}, 2000 )
+
+clearInteval(id) // setInterval이 중단된다.
+```
