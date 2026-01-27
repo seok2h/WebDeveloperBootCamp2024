@@ -37,10 +37,23 @@ const square = (x) => {
     return x * x;
 }
 
-const rollDie = () => {
-    return Math.floor(Math.random() * 6) + 1;
-}
 
 const greet = (name) => {
     return "Hey " + name + "!";
 }
+
+// const rollDie = () => {
+//     return Math.floor(Math.random() * 6) + 1;
+// }
+
+const rollDie = () => ( // 중괄호에서 소괄호로 변경. 위 함수와 같은 역할을 수행한다. return 문이 없어도 return 한다.
+    Math.floor(Math.random() * 6) + 1
+)
+
+const newMovies = movies.map(function (movie) {
+    return `${movie.title} - ${movie.score / 10}`
+})
+
+const newMoviess = movies.map(movie => (
+    `${movie.title} - ${movie.score / 10}`
+))

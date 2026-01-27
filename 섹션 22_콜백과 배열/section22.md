@@ -63,4 +63,17 @@ const square = (x) => {
 const sum = (x, y) => {
     return x + y;
 }
+
+const sum = (x, y) => ( 
+    x + y;
+)
+// 중괄호에서 소괄호로 변경하면 return 문 없어 return 할 수 있다. 코드를 더 짧게 만들 수 있으며, 한줄로 작성할 수도 있다.
+const sum = (x, y) => a + b
+
+// 하지만 리턴할 딱 하나의 표현식만 존재해야 한다.
+const sum = (x, y) => (
+    let a = x;
+    let b = y; 
+    a + b;
+) // ERROR
 ```
