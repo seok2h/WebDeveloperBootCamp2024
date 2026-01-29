@@ -169,3 +169,61 @@ const recentMovies = movies.filter(m => m.year > 2000)
 movies.filter(m => m.score > 80).map( => m.title);
 // 80점 이상의 타이틀만 보여줌
 ``` 
+
+## EVERY & SOME
+BOOLEAN 메서드
+* every : 배열안에 모든 조건값이 참이면 true
+```JavaScript
+const exams = [80, 98, 92, 78, 77, 90, 89, 84, 81, 77]
+
+exams.every(score => score >= 75)
+>>> true
+
+const exams = [80, 98, 92, 78, 70, 90, 89, 84, 81, 77]
+
+exams.every(score => score >= 75)
+>>> false
+```
+* some : 배열안에 일부가 참이면 참
+```JavaScript
+const movies = [
+    {
+        title: 'Amadues',
+        score: 99,
+        year: 1984
+    },
+    {
+        title: 'Sharknado',
+        score: 35,
+        year: 2013
+    },
+    {
+        title: '13 Going On 30',
+        score: 70,
+        year: 2004
+    },
+    {
+        title: 'Stand By Me',
+        score: 85,
+        year: 1986
+    },
+    {
+        title: 'Waterworld',
+        score: 62,
+        year: 1995
+    },
+    {
+        title: 'Jingle All The Way',
+        score: 71,
+        year: 1979
+    },
+    {
+        title: 'Parasite',
+        score: 95,
+        year: 2019
+    }
+]
+
+movies.some(movie => movie.year > 2015)
+>>> true // 하나 이상 있음
+```
