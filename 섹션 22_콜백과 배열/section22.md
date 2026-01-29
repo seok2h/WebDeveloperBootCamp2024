@@ -1,6 +1,6 @@
 # 콜백과 배열
 
-### foreach
+## foreach
 for ... of 문과 거의 비슷 (새로운 배열을 생성 X)
 ```JavaScript
 const = nums = [9, 8, 7, 6, 5, 4, 3, 2, 1]
@@ -17,7 +17,7 @@ nums.forEach(function (el) {
 })
 ```
 
-### map
+## map
 새로운 배열을(리스트) 생성하고 함수 적용한 결과를 새로운 배열에 저장.
 ```JavaScript
 const text = ['rofl', 'lol', 'omg', 'ttyl'];
@@ -54,7 +54,7 @@ const titles = movies.map(function (movie) {
 >>> ["Amadues", "Stand By Me", "Parasite", "Alien"]
 ```
 
-### Arrow function
+## Arrow function
 ```JavaScript
 const square = (x) => {
     return x * x;
@@ -78,7 +78,7 @@ const sum = (x, y) => (
 ) // ERROR
 ```
 
-### setTimeout
+## setTimeout
 다른 언어의 sleep 함수와 비슷하지만 다르다.
 ```JavaScript
 console.log("HELLO!!!...");
@@ -98,7 +98,7 @@ setTimeout(console.log("hi!"), 3000)
 ```
 setTimeout의 인수로 콜백 함수가 와야한다.
 
-### setInterval
+## setInterval
 원하는 시간을 간격으로 무한 반복하게 한다.
 ```JavaScript
 setInterval(() => {
@@ -116,3 +116,56 @@ const id = setInterval(() => {
 
 clearInteval(id) // setInterval이 중단된다.
 ```
+
+## filter
+필터링 한 후 참인 값에 대해서만 새로운 배열을 생성한다.
+```JavaScript
+const numbers = [1,2,3,4,5,6,7,8,9];
+
+numbers.filter(n => {
+    return n < 10
+})
+// 위 함수의 출력 : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+**filter 활용**
+```JavaScript
+const movies = [
+    {
+        title: 'Amadeus',
+        score: 99,
+        year: 1984
+    },
+    {
+        title: 'Sharknado',
+        score: 35,
+        year: 2013
+    },
+    {
+        title: '13 Going On 30',
+        score: 35,
+        year: 2013,
+    },
+    {
+        title: 'Waterworld',
+        score: 62,
+        year: 1995
+    }
+]
+
+const goodMovies = movies.filter(movie => {
+    return movie.score > 80
+})
+
+goodMovies
+>>> 0
+: 
+{title: 'Amadeus', score: 99, year: 1984}
+
+// 더 짧게 하는 법
+const goodMovies = movies.filter(movie => m.score > 80)
+
+const recentMovies = movies.filter(m => m.year > 2000)
+
+movies.filter(m => m.score > 80).map( => m.title);
+// 80점 이상의 타이틀만 보여줌
+``` 
