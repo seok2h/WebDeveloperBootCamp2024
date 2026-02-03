@@ -238,4 +238,20 @@ movies.some(movie => movie.year > 2015)
 
 첫 번째 순회에서는 accumulator에 
 ```JavaScript
+const total = prices.reduce((total, price) => {
+    return total + price
+}) // 위 반복문과 동일한 작업을 수행 
+```
+**첫번째 인수는 total에 저장 두번째 인수를 price에 저장 후 순회 시작. return 값을 다시 total에 저장.**<br>
+
+
+두번째 인수를 지정함으로써 초기값을 설정할 수 있다.
+```JavaScript
+const evens = [2,4,6,8];
+evens.reduce((sum, num) => sum + num)
+>> 20
+
+evens.reduce((sum, num) => sum + num, 100)
+>> 120
+// 초기값을 줄 수 있음
 ```
