@@ -1,6 +1,6 @@
 # 콜백과 배열
 
-## foreach
+## FOREACH
 for ... of 문과 거의 비슷 (새로운 배열을 생성 X)
 ```JavaScript
 const = nums = [9, 8, 7, 6, 5, 4, 3, 2, 1]
@@ -17,7 +17,7 @@ nums.forEach(function (el) {
 })
 ```
 
-## map
+## MAP
 새로운 배열을(리스트) 생성하고 함수 적용한 결과를 새로운 배열에 저장.
 ```JavaScript
 const text = ['rofl', 'lol', 'omg', 'ttyl'];
@@ -117,7 +117,7 @@ const id = setInterval(() => {
 clearInteval(id) // setInterval이 중단된다.
 ```
 
-## filter
+## FILTER
 필터링 한 후 참인 값에 대해서만 새로운 배열을 생성한다.
 ```JavaScript
 const numbers = [1,2,3,4,5,6,7,8,9];
@@ -226,4 +226,16 @@ const movies = [
 
 movies.some(movie => movie.year > 2015)
 >>> true // 하나 이상 있음
+```
+
+## REDUCE
+**배열을 상대로 각 요소인자로 넘어온 콜백 함수를 실행하여 누적된 하나의 결과값을 반환.**<br>
+**reduce 함수 구조:**<br>
+&emsp;&emsp;array.reduce(콜백 함수, 초기값);<br>
+&emsp;&emsp;array.reduce((accumulator, currentValue));<br>
+
+첫 매개변수는 accumulator, 두번째 매개변수는 배열의 각각 element
+
+첫 번째 순회에서는 accumulator에 
+```JavaScript
 ```
