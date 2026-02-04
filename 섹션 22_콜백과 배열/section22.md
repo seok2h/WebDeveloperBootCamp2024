@@ -255,3 +255,54 @@ evens.reduce((sum, num) => sum + num, 100)
 >> 120
 // 초기값을 줄 수 있음
 ```
+
+## Arrow function and this
+**화살표 함수로 정의한 함수는 본인의 this를 가지지 않는다.**
+```JavaScript
+const person = {
+    firstName: 'Viggo',
+    lastName: 'Mortensen',
+    fullName: () => {
+        return `${this.firstName} ${this.lastName}` // 여기서 this는 window 객체
+        // undefined
+    }
+}
+
+person.fullName()
+>>> undefined undefined
+```
+---
+**window 객체 안의 콜백함수의 this는 window 객체를 가르킨다**
+```JavaScript
+const person = {
+    firstName: 'Viggo',
+    lastName: 'Mortensen',
+    fullName: () => {
+        return `${this.firstName} ${this.lastName}`
+    },
+    shoutName: function () {
+        setTimeout(function () {
+            console.log(this); // setTimeout이 window 소속이므로 this도 window 객체를 가르킴
+            console.log(this.fullName()) // error, window 객체에는 fullName()이 없기 때문
+        }, 3000)
+    }
+}
+```
+---
+**화살표함수로 변환하면 본인 위의 있는 것을 객체로 가르킨다.**
+```JavaScript
+const person = {
+    firstName: 'Viggo',
+    lastName: 'Mortensen',
+    fullName: function () {
+        return `${this.firstName} ${this.lastName}`
+    },
+    shoutName: function () { // 화살표 함수로 변환
+        setTimeout(() => {
+        console.log(this); // 이 this는 위 function () this와 같음
+        console.log(this.fullName())
+        }, 3000)
+    }
+}
+```
+화살표 안에 있는 this는 함수가 만든 범위에 상속되는 this 키워드 값과 같다.
