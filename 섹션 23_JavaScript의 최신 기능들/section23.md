@@ -91,6 +91,7 @@ function raceResults(gold, silver, ...everyoneElse) {
 ```
 ## Desturcturing
 구조 , 배열을 해체하여 각각의 변수로 만드는 법
+### Array
 ```JavaScript
 const scores = [929321, 899341, 888336, 772739, 543671, 243567, 111934];
 
@@ -110,4 +111,66 @@ gold
 >>> 929321
 everyoneElse
 >>> [899341, 888336, 772739, 543671, 243567, 111934]
+```
+
+### Object
+이름이 key가 되고 value를 저장하고 있는 변수를 만든다. (const(let) key = value)
+```JavaScript
+const runner = {
+    first: "Eliud",
+    last: "Kipchoge",
+    country: "Kenya",
+    title: "Elder of the Order of the Golden Heart of Kenya"
+}
+
+const {first, last, country} = runner;
+
+first; // "Eliud"
+last; // "Kipchoge"
+country; // "Kenya"
+```
+
+그렇다면 변수이름을 무조건 key로만 지정되고 내가 원하는 값으로 하지는 못하는가?<br>
+=> 그건 아님
+```JavaScript
+const runner = {
+    first: "Eliud",
+    last: "Kipchoge",
+    country: "Kenya",
+    title: "Elder of the Order of the Golden Heart of Kenya"
+}
+
+const {title: bookName} = runner;
+bookName
+>>> "Elder of the Order of the Golden Heart of Kenya"
+```
+만약 정의 되지 않는 걸 찾는다면 undefined가 된다. 또한 기본값을 줄 수도 있다.
+```JavaScript
+const runner = {
+    first: "Eliud",
+    last: "Kipchoge",
+    country: "Kenya",
+    title: "Elder of the Order of the Golden Heart of Kenya"
+}
+
+const {title, country, bornDate} = runner;
+bornDate
+>>> undefined
+
+const {title, country, bornDate = "N/A"}
+bornDate
+>>> "N/A"
+```
+단 그 값이 존재함에도 기본값을 주려고 하면 무시된다.
+```JavaScript
+const runner = {
+    first: "Eliud",
+    last: "Kipchoge",
+    country: "Kenya",
+    title: "Elder of the Order of the Golden Heart of Kenya"
+}
+
+const {title: bookName = "N/A"}
+bookName
+>>> "Elder of the Order of the Golden Heart of Kenya" // "N/A"로 기본값을 설정하더라도 값이 존재하므로 기존값이 불러와진다.
 ```
