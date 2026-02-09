@@ -174,3 +174,20 @@ const {title: bookName = "N/A"}
 bookName
 >>> "Elder of the Order of the Golden Heart of Kenya" // "N/A"로 기본값을 설정하더라도 값이 존재하므로 기존값이 불러와진다.
 ```
+
+## Param desturcturing
+```JavaScript
+const runner = {
+    first: "Eliud",
+    last: "Kipchoge",
+    country: "Kenya",
+    title: "Elder of the Order of the Golden Heart of Kenya"
+}
+
+function fullName({firstName, lastName}) {
+    return `${firstName}, ${lastName}`
+}
+
+fullName(runner)
+>>> "Eluid, Kipchoge"
+```
