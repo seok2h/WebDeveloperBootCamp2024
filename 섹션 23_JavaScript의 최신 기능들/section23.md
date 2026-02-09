@@ -64,3 +64,27 @@ const canline = {isFurry: true, family: 'Caninae'}
 {..."HIII"}
 >>> {0: "H", 1: "I", 2: "I", 3: "I"}
 ```
+## Rest
+매개변수를 정의하지 않아도 인수는 arguments 요소에 자동 저장된다 (배열 객체가 아님 주의)
+```JavaScript
+function sum() {
+    console.log(arguments)
+}
+
+sum(34, 65, 77)
+>>> Arguments(3) [34, 65, 77, callee: ƒ, Symbol(Symbol.iterator): ƒ]
+```
+```JavaScript
+function sum(...nums) { // 인수 개수의 제한을 없앨 수 있다.
+    console.log(nums)
+}
+
+sum(43,43,23,52)
+>>> [43, 43, 23, 52]
+```
+```JavaScript
+function raceResults(gold, silver, ...everyoneElse) {
+    console.log(`GOLD MEDA GOES TO: ${gold}`)
+    console.log(`SILVER MEDA GOES TO: ${silver}`)
+    console.log(`AND THANKS TO EVERYONE ELSE: ${everyoneElse}`)
+}
