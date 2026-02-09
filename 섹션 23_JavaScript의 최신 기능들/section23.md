@@ -88,3 +88,26 @@ function raceResults(gold, silver, ...everyoneElse) {
     console.log(`SILVER MEDA GOES TO: ${silver}`)
     console.log(`AND THANKS TO EVERYONE ELSE: ${everyoneElse}`)
 }
+```
+## Desturcturing
+구조 , 배열을 해체하여 각각의 변수로 만드는 법
+```JavaScript
+const scores = [929321, 899341, 888336, 772739, 543671, 243567, 111934];
+
+const highScores = scores[0];
+const secondHighScore = scores[1];
+
+const [gold, silver, bronze] = scores;
+gold
+>>> 929321
+silver
+>>> 899341
+bronze
+>>> 888336
+
+const [gold, ...everyoneElse] = scores
+gold
+>>> 929321
+everyoneElse
+>>> [899341, 888336, 772739, 543671, 243567, 111934]
+```
